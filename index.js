@@ -31,7 +31,7 @@ http.createServer(async function (req, res) {
             offsetY: 0
         }
 
-        let result = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" height="${devToResponse.length * Math.round(styles.fontSize * 1.5) + styles.offsetY + 10}">
+        let result = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="500" height="${devToResponse.length * Math.round(styles.fontSize * 1.5) + styles.offsetY + 10}">
         <style>
             .title, .article-title {
                 font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif;
