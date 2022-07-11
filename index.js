@@ -15,6 +15,7 @@ const {DevToService} = require("./service/devto-service");
  * @property {string} fontSize
  * @property {string} fontFamily
  * @property {boolean} showTitle
+ * @property {number} width
  */
 
 http.createServer(async function (req, res) {
@@ -28,10 +29,11 @@ http.createServer(async function (req, res) {
         const styles = {
             textColor: queryParams.textColor || '1f6feb',
             fontSize: queryParams.fontSize || 14,
-            offsetY: 0
+            offsetY: 0,
+            width: queryParams.width || 500
         }
 
-        let result = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="500" height="${devToResponse.length * Math.round(styles.fontSize * 1.5) + styles.offsetY + 10}">
+        let result = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="${styles.width}" height="${devToResponse.length * Math.round(styles.fontSize * 1.5) + styles.offsetY + 10}">
         <style>
             .title, .article-title {
                 font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif;
