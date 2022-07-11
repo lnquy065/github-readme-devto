@@ -8,14 +8,19 @@
 <em >Show your latest dev.to articles</em>
 </p>
 
+<p align="center">
+<img width="500px" src="https://raw.githubusercontent.com/lnquy065/github-readme-devto/main/readme/pic-1.png" />
+</p>
 
 
 
 ## Usage
 
-https://dev.to/<USER_NAME>
+`https://dev.to/<USER_NAME>`
 
 ```
+## Dev.to articles
+
 [![<USER_NAME>'s articles](https://github-readme-devto.herokuapp.com?username=<USER_NAME>)](https://dev.to/<USER_NAME>)
 ```
 
