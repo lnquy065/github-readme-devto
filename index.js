@@ -10,11 +10,8 @@ const {DevToService} = require("./service/devto-service");
 
 /**
  * @typedef {Object} ArticleRequest
- * @property {string} backgroundColor
  * @property {string} textColor
  * @property {string} fontSize
- * @property {string} fontFamily
- * @property {boolean} showTitle
  * @property {number} width
  */
 
@@ -27,8 +24,8 @@ http.createServer(async function (req, res) {
         const devToResponse = await DevToService.getPublishedArticle(queryParams)
 
         const styles = {
-            textColor: queryParams.textColor || '1f6feb',
-            fontSize: queryParams.fontSize || 14,
+            textColor: queryParams.textColor || '58a6ff',
+            fontSize: queryParams.fontSize || 16,
             offsetY: 0,
             width: queryParams.width || 500
         }
