@@ -38,8 +38,8 @@
 | tags          | Retrieve articles with any of the comma-separated tags. Example: `tags=javascript, css`               | _none_        |
 | tags_exclude  | Retrieve articles that do not contain any of comma-separated tags. Example: `tags_exclude=node, java` | _none_        |
 | state         | Allow the client to check which articles are fresh or rising. Enum: "fresh" "rising" "all"            | _none_        |
-| top           | Allow the client to return the most popular articles in the last N days. Example: `top=2`             | 500           |
-| collection_id | Return the list of articles belonging to the requested collection. Example: `collection_id=99`                          | 500           |
+| top           | Allow the client to return the most popular articles in the last N days. Example: `top=2`             | _none_           |
+| collection_id | Return the list of articles belonging to the requested collection. Example: `collection_id=99`                          | _none_           |
 
 ## License
 
