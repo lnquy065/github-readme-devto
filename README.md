@@ -41,3 +41,6 @@
 | top           | Allow the client to return the most popular articles in the last N days. Example: `top=2`             | 500           |
 | collection_id | Return the list of articles belonging to the requested collection. Example: `collection_id=99`                          | 500           |
 
+## License
+
+MIT © [lnquy065](https://github.com/lnquy065)
